@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+ .node
+    {
+        fill: #cccccc;
+        stroke: #ffffff;
+        stroke-width: 2px;
+    }
+
+  path.link
+  {
+      fill:none;
+      stroke-width: 3px;
+      stroke:#777;
+  }
+  text {
+  fill: #000;
+  font: 12px sans-serif;
+  pointer-events: none;
+}
+</style>
+<body>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+
+var margin= 0.8,
+    width = window.innerWidth*margin,
+    height = window.innerHeight*margin;
+
+
+d3.csv("battles.csv",function(error,links){
+    var nodes ={};
+
+    links.forEach(function(link){
+
+        link.source=nodes[link.source] ||
+          (nodes[link.source]={name:link.source});
+        link.target = nodes[link.target]||
+            (nodes[link.target]={name:link.target});
+        link.value = +link.value;
+        
+    });
+
+console.log(nodes);
+
+console.log(links);
+
+var svg = d3.select('body').append('svg')
+           .attr('width',width)
+           .attr('height',height);
+
+var path =svg.append("svg:g").selectAll("path")
+    .data(links)
+    .enter().append("svg:path")
+    .attr("class","link")
+
+
+var node = svg.selectAll('.node')
+          .data(d3.values(nodes))
+          .enter().append('circle')
+          .attr('class','node')
+          .attr('r',width * 0.01);
+
+// add the text
+node.append("text")
+    .attr("text-anchor", "middle")
+    .attr("dy", ".35em")
+    .attr("y",-62)
+    .text(function(d) { return d.name; });
+
+var force = d3.layout.force()
+            .size([width,height])
+            .nodes(d3.values(nodes))
+            .links(links)
+            .on("tick",tick)
+            .linkDistance(100)
+            .charge(-300)
+            .start();
+
+function tick()
+{
+    node.attr('cx', function(d){ return d.x; })
+                  .attr('cy',function(d){ return d.y; })
+                  .call(force.drag);
+    
+    path.attr("d",function(d,i){
+
+
+        //setup source and target points
+
+        var dx=d.target.x-d.source.x,
+            dy=d.target.y-d.source.y,
+
+        //Calculat the curve and math ! 
+        
+        dr = Math.sqrt(dx * dx + dy * dy);
+
+        //return the path using svg path mini-langauge
+
+        return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr +" 0 0,1 " + d.target.x+","+ d.target.y;
+
+      
+
+    });
+
+
+
+  
+}
+
+
+})
+
+
+
+
+
+</script>
