@@ -1,0 +1,26 @@
+{
+    "nodes":[
+      { "name": "Creative deisgn"},
+      { "name": "Digital Disruptor","target": [0], "value": 30 },
+      { "name": "Creator","target": [0], "value": 30 },
+      { "name": "Connector","target": [0], "value":30 },
+      { "name": "Driver","target": [0], "value": 30 },
+      { "name": "Gurj thandi", "target": [1], "value": 25 },
+      { "name": "Tom Greener", "target": [2], "value": 25 },  
+      { "name": "Dominic", "target": [3], "value": 25 },
+      { "name": "Matt smith", "target": [2], "value": 25 }, 
+      { "name": "Andy Pennington", "target": [4], "value": 25 }, 
+      { "name": "Luke Myatt", "target": [2], "value": 25 },
+      { "name": "Mike Dunlop", "target": [2], "value": 25 },
+      { "name": "Toby Joyce", "target": [3], "value": 25 },
+      { "name": "Tim Dunne", "target": [2], "value": 25 },
+      { "name": "Aled Lloyd", "target": [4], "value": 25 },
+      { "name": "Sharon Bruton", "target": [3], "value": 25 },
+      { "name": "Chris Jennings", "target": [2], "value": 25 },
+      { "name": "John Tredinnick", "target": [4], "value": 25 },
+      { "name": "Anna Frascina", "target": [4], "value": 25 },
+      { "name": "Oly Tuck", "target": [4], "value": 25 },
+      { "name": "Leigh Firmin", "target": [3], "value": 25 },
+      { "name": "Rafal Zera", "target": [2], "value": 25 }
+]
+  }

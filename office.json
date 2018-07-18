@@ -1,0 +1,28 @@
+{
+    "nodes":[
+      { "name": "Creative deisgn"},
+      { "name": "Birmingham","target": [0], "value": 30 },
+      { "name": "Bristol","target": [0], "value": 30 },
+      { "name": "Epsom","target": [0], "value": 30 },
+      { "name": "Glasgow","target": [0], "value": 30 },
+      { "name": "Warrington","target": [0], "value": 30 },
+      { "name": "London Euston","target": [0], "value": 30 },
+      { "name": "Gurj thandi", "target": [1], "value": 25 },
+      { "name": "Tom Greener", "target": [2], "value": 25 },  
+      { "name": "Dominic", "target": [3], "value": 25 },
+      { "name": "Matt smith", "target": [2], "value": 25 }, 
+      { "name": "Andy Pennington", "target": [4], "value": 25 }, 
+      { "name": "Luke Myatt", "target": [3], "value": 25 },
+      { "name": "Mike Dunlop", "target": [3], "value": 25 },
+      { "name": "Toby Joyce", "target": [1], "value": 25 },
+      { "name": "Tim Dunne", "target": [1], "value": 25 },
+      { "name": "Aled Lloyd", "target": [2], "value": 25 },
+      { "name": "Sharon Bruton", "target": [6], "value": 25 },
+      { "name": "Chris Jennings", "target": [5], "value": 25 },
+      { "name": "John Tredinnick", "target": [2], "value": 25 },
+      { "name": "Anna Frascina", "target": [1], "value": 25 },
+      { "name": "Oly Tuck", "target": [1],"value": 25 },
+      { "name": "Leigh Firmin", "target": [2], "value": 25 },
+      { "name": "Rafal Zera", "target": [6], "value": 25 }
+]
+  }

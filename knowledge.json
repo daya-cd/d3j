@@ -1,0 +1,27 @@
+{
+    "nodes":[
+      { "name": "Creative deisgn"},
+      { "name": "UX","target": [0], "value": 30 },
+      { "name": "Programming","target": [0], "value": 30 },
+      { "name": "VR","target": [0], "value": 30 },
+      { "name": "Visualisation","target": [0], "value": 30 },
+      { "name": "Animation","target": [0], "value": 25 },
+      { "name": "Gurj thandi", "target": [1,5], "value": 25 },
+      { "name": "Tom Greener", "target": [2,3], "value": 25 },  
+      { "name": "Dominic", "target": [4], "value": 25 },
+      { "name": "Matt smith", "target": [2,4], "value": 25 }, 
+      { "name": "Andy Pennington", "target": [3,4], "value": 25 }, 
+      { "name": "Luke Myatt", "target": [4,5], "value": 25 },
+      { "name": "Mike Dunlop", "target": [4], "value": 25 },
+      { "name": "Toby Joyce", "target": [4], "value": 25 },
+      { "name": "Tim Dunne", "target": [2,3], "value": 25 },
+      { "name": "Aled Lloyd", "target": [3], "value": 25 },
+      { "name": "Sharon Bruton", "target": [1], "value": 25 },
+      { "name": "Chris Jennings", "target": [1], "value": 25 },
+      { "name": "John Tredinnick", "target": [3,4,2], "value": 25 },
+      { "name": "Anna Frascina", "target": [1], "value": 25 },
+      { "name": "Oly Tuck", "target": [1,2], "value": 25 },
+      { "name": "Leigh Firmin", "target": [1], "value": 25 },
+      { "name": "Rafal Zera", "target": [4], "value": 25 }
+]
+  }
